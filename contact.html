@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <style>
+
+
+
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #FFD700;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #FFD700;
+  color: black;
+}
+
+
+
+
+      /* Add some basic styling to the form elements */
+      input[type=text], input[type=email], input[type=tel], input[type=date], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        font-size: 16px;
+      }
+
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+
+      /* Add some color to the form */
+      body {
+        background-color: #f2f2f2;
+      }
+
+      /* Make the form responsive */
+      @media screen and (max-width: 600px) {
+        input[type=text], input[type=email], input[type=tel], input[type=date], select, textarea {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+
+<div class="topnav">
+  <a class="active" href="file:///C:/WEbsite/21csl271.html">Home</a>
+  <a href="file:///C:/WEbsite/index.html">News</a>
+  <a href="file:///C:/WEbsite/contact.html">Contact</a>
+  <a href="file:///C:/WEbsite/about.html">About</a>
+
+</div>
+
+
+
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+      <label for="phone">Phone no:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your phone no.." required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="address">Feedback:</label>
+      <textarea id="address" name="address" placeholder="Your Feedback..." style="height:200px" required></textarea>
+
+      <input type="submit" value="Submit Now">
+    </form>
+  </body>
+</html>
